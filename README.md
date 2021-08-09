@@ -1,8 +1,12 @@
 # React Hooks Intro Guide (with Pokemon!)
 
+1. Learn how to build out React Hooks from scratch (App.js)
+2. Learn how to connect an API GET Request to state (pokemon.js component)
+3. Learn how to update state with an API GET Request (api.js component)
+
 ## Before Using
 
-Make sure Axios is installed (npm install axios).
+Make sure you install Axios: npm install axios
 
 ## To Render On Your browser
 
