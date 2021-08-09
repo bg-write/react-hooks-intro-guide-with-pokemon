@@ -28,6 +28,7 @@ function App() {
 				<span>{count}</span>
 				<button onClick={increaseCount}>+</button>
 			</div>
+			<hr></hr>
 		</>
 	);
 }

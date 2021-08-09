@@ -37,6 +37,7 @@ function Api() {
 					<p className="loading">Loading ...</p>
 				)}
 			</div>
+			<hr></hr>
 		</>
 	);
 }

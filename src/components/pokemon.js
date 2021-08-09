@@ -14,8 +14,9 @@ function Pokemon() {
 		setPokemon(data);
 	};
 
+	// Set "decreaseCount" to make sure we don't go below 1.
 	function decreaseCount() {
-		setCount((preCount) => preCount - 1);
+		count <= 1 ? setCount(1) : setCount((preCount) => preCount - 1);
 	}
 	function increaseCount() {
 		setCount((preCount) => preCount + 1);
@@ -41,10 +42,11 @@ function Pokemon() {
 					<div className="pokemon">
 						<h2>{pokemon.name}</h2>
 						{/* ICEBOX: image does not load on refresh. TypeError: Cannot read property 'front_default' of undefined */}
-						<img alt="pokemon" src={pokemon.sprites.front_default} />
+						{/* <img alt="pokemon" src={pokemon.sprites.front_default} /> */}
 					</div>
 				</div>
 			</div>
+			<hr></hr>
 		</>
 	);
 }
