@@ -6,11 +6,11 @@
 
 ## Before Using
 
-Make sure you install Axios: npm install axios
+Make sure you install Axios: "npm install axios"
 
 ## To Render On Your browser
 
-In your terminal: npm start
+In your terminal: "npm start"
 
 ## Credits
 
