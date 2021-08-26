@@ -8,7 +8,7 @@
 
 Make sure you install Axios: "npm install axios"
 
-## To Render On Your browser
+## To Render On Your Browser
 
 In your terminal: "npm start"
 

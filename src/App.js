@@ -22,13 +22,14 @@ function App() {
 	return (
 		// What we render to the browser. Here, we invoke State (count) and our two functions that use setCount (decreaseCount and increaseCount).
 		<>
-			<h1>BASIC REACT HOOKS FROM SCRATCH</h1>
-			<div>
-				<button onClick={decreaseCount}>-</button>
-				<span>{count}</span>
-				<button onClick={increaseCount}>+</button>
+			<div id="scratch-container" className="container">
+				<h1>BASIC REACT HOOKS FROM SCRATCH</h1>
+				<div>
+					<button onClick={decreaseCount}>-</button>
+					<span>{count}</span>
+					<button onClick={increaseCount}>+</button>
+				</div>
 			</div>
-			<hr></hr>
 		</>
 	);
 }

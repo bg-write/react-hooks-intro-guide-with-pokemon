@@ -21,23 +21,24 @@ function Api() {
 
 	return (
 		<>
-			<h1>MAKING ONE API GET REQUEST</h1>
+			<div id="api-container" className="container">
+				<h1>MAKING ONE API GET REQUEST</h1>
 
-			<div className="wrapper">
-				{posts.length > 0 ? (
-					<div className="content">
-						{posts.map((post) => (
-							<div className="post" key={post.id}>
-								<h2>{post.title}</h2>
-								<p>{post.body}</p>
-							</div>
-						))}
-					</div>
-				) : (
-					<p className="loading">Loading ...</p>
-				)}
+				<div className="wrapper">
+					{posts.length > 0 ? (
+						<div className="content">
+							{posts.map((post) => (
+								<div className="post" key={post.id}>
+									<h2>{post.title}</h2>
+									<p>{post.body}</p>
+								</div>
+							))}
+						</div>
+					) : (
+						<p className="loading">Loading ...</p>
+					)}
+				</div>
 			</div>
-			<hr></hr>
 		</>
 	);
 }

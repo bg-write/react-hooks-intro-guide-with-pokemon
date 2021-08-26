@@ -30,27 +30,28 @@ function Pokemon() {
 
 	return (
 		<>
-			<h1>UPDATING OUR API GET REQUEST BASED ON STATE</h1>
+			<div id="pokemon-container" className="container">
+				<h1>UPDATING OUR API GET REQUEST BASED ON STATE</h1>
 
-			<div className="counter">
-				<button onClick={decreaseCount}>-</button>
-				<span>{count}</span>
-				<button onClick={increaseCount}>+</button>
-			</div>
+				<div className="counter">
+					<button onClick={decreaseCount}>-</button>
+					<span>{count}</span>
+					<button onClick={increaseCount}>+</button>
+				</div>
 
-			<div className="wrapper">
-				<div className="content">
-					<div className="pokemon">
-						<h2>{pokemon.name}</h2>
-						{pokemon.length === 0 ? (
-							<p>loading ...</p>
-						) : (
-							<img alt="pokemon" src={pokemon.sprites.front_default} />
-						)}
+				<div className="wrapper">
+					<div className="content">
+						<div className="pokemon">
+							<h2>{pokemon.name}</h2>
+							{pokemon.length === 0 ? (
+								<p>loading ...</p>
+							) : (
+								<img alt="pokemon" src={pokemon.sprites.front_default} />
+							)}
+						</div>
 					</div>
 				</div>
 			</div>
-			<hr></hr>
 		</>
 	);
 }
